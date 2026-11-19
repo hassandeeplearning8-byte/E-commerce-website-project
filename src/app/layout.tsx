@@ -6,6 +6,7 @@ import TopNavbar from "@/components/layout/Navbar/TopNavbar";
 import Footer from "@/components/layout/Footer";
 import HolyLoader from "holy-loader";
 import Providers from "./providers";
+import ChatbotWidget from "@/components/chatbot/ChatbotWidget";
 
 export const metadata: Metadata = {
   title: "Shopco",
@@ -23,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={satoshi.className}>
+      <body className={satoshi.className} suppressHydrationWarning>
         <HolyLoader color="#868686" />
         <TopBanner />
         <Providers>
@@ -31,6 +32,7 @@ export default function RootLayout({
           {children}
         </Providers>
         <Footer />
+        <ChatbotWidget />
       </body>
     </html>
   );
