@@ -1,8 +1,10 @@
-[![Shopco Screenshot](https://github.com/mohammadoftadeh/repo-assets/blob/main/shopco-cover.png?raw=true)](https://next-ecommerce-shopco.vercel.app/)
+![Shopco AI Assistant](./thumbnail.png)
 
-# Shopco
+# Shopco - AI-Powered E-Commerce Platform
 
-Shopco is an open-source project that converts a Figma design of an e-commerce website into a fully responsive front-end application. It utilizes **Next.js 14 App Router**, **TypeScript**, **Tailwind CSS**, **Redux**, **Framer Motion**, and **ShadCN UI** to deliver a modern, scalable, and optimized solution based on industry standards.
+Shopco is a modern, responsive e-commerce web application featuring an integrated **AI Shopping Assistant** powered by **Google Gemini** and connected directly to a **live Google Sheets inventory backend**.
+
+Built with **Next.js 14 App Router**, **TypeScript**, **Tailwind CSS**, **Redux Toolkit**, and **ShadCN UI**.
 
 ## Table of Contents
 
@@ -32,7 +34,9 @@ Check out the live demo: [Shopco Demo](https://next-ecommerce-shopco.vercel.app/
 
 ## Features
 
-- **Next.js 14**: Server-side rendering (SSR), Static Site Generation (SSG), optimized routing, and API integrations.
+- **AI Shopping Assistant**: Real-time customer support powered by Google's Gemini Flash free-tier models with multi-model failover.
+- **Live Google Sheets Inventory**: Synchronized with Google Cloud Service Account and Google Sheets API for zero-database overhead inventory management.
+- **Next.js 14**: Server-side rendering (SSR), Static Site Generation (SSG), App Router, and API routes.
 - **TypeScript**: Strongly typed code for better error detection and maintainability.
 - **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
 - **Redux**: State management for managing the shopping cart and other global states.
