@@ -3,6 +3,7 @@
 import React, { useRef } from "react";
 import { Provider } from "react-redux";
 import { makeStore } from "../lib/store";
+import { AuthProvider } from "@/lib/supabase/AuthProvider";
 
 type Props = {
   children: React.ReactNode;
@@ -16,7 +17,9 @@ const Providers = ({ children }: Props) => {
 
   return (
     <Provider store={storeRef.current.store}>
-      {children}
+      <AuthProvider>
+        {children}
+      </AuthProvider>
     </Provider>
   );
 };
